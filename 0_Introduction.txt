@@ -2,23 +2,25 @@
   <HEAD>0_Introduction
   </HEAD>
   <BODY>
-IntroducciÛn a git
-Git es un sistema de control de versiones distribuido que se diferencia del resto en el modo en que modela sus datos. La mayorÌa de los dem·s sistemas almacenan la informaciÛn como una lista de cambios en los archivos, mientras que Git modela sus datos m·s como un conjunto de instant·neas de un mini sistema de archivos.
-Los tres estados
-Git tiene tres estados principales en los que se pueden encontrar tus archivos: confirmado (committed), modificado (modified), y preparado (staged). Confirmado significa que los datos est·n almacenados de manera segura en tu base de datos local. Modificado significa que has modificado el archivo pero todavÌa no lo has confirmado a tu base de datos. Preparado significa que has marcado un archivo modificado en su versiÛn actual para que vaya en tu prÛxima confirmaciÛn.
+<title><h1>Introducci√≥n a git</h1></title>
+<p>Git es un sistema de control de <strong>versiones distribuido</p></strong> que se diferencia del resto en el modo en que modela sus datos. La mayor√≠a de los dem√°s sistemas almacenan la informaci√≥n como una lista de cambios en los archivos, mientras que Git modela sus datos m√°s como un conjunto de instant√°neas de un mini sistema de archivos.
 
-Esto nos lleva a las tres secciones principales de un proyecto de Git: el directorio de Git (Git directory), el directorio de trabajo (working directory), y el ·rea de preparaciÛn (staging area).
-Flujos de trabajo distribuidos con git
-Hemos visto en quÈ consiste un entorno de control de versiones distribuido, pero m·s all· de la simple definiciÛn, existe m·s de una manera de gestionar los repositorios. Estos son los flujos de trabajo m·s comunes en Git.
+<title><h2>Los tres estados</h2></title>
+<p><strong>Git tiene tres estados principales</p></strong> en los que se pueden encontrar tus archivos: confirmado (committed), modificado (modified), y preparado (staged). Confirmado significa que los datos est√°n almacenados de manera segura en tu base de datos local. Modificado significa que has modificado el archivo pero todav√≠a no lo has confirmado a tu base de datos. Preparado significa que has marcado un archivo modificado en su versi√≥n actual para que vaya en tu pr√≥xima confirmaci√≥n.
 
-Flujo de trabajo centralizado
-Existe un ˙nico repositorio o punto central que guarda el cÛdigo y todo el mundo sincroniza su trabajo con Èl. Si dos desarrolladores clonan desde el punto central, y ambos hacen cambios; tan solo el primero de ellos en enviar sus cambios de vuelta lo podr· hacer limpiamente. El segundo desarrollador deber· fusionar previamente su trabajo con el del primero, antes de enviarlo, para evitar el sobreescribir los cambios del primero
+<p><strong>Esto nos lleva a las tres secciones principales de un proyecto de Git</p></strong>: el directorio de Git (Git directory), el directorio de trabajo (working directory), y el √°rea de preparaci√≥n (staging area).
+<title><h1Flujos de trabajo distribuidos con git</h1></title>
+Hemos visto en qu√© consiste un entorno de control de versiones distribuido, pero m√°s all√° de la simple definici√≥n, existe m√°s de una manera de gestionar los repositorios. Estos son los flujos de trabajo m√°s comunes en Git.
 
-Flujo de trabajo del Gestor-de-Integraciones
-Al permitir m˙ltiples repositorios remotos, en Git es posible tener un flujo de trabajo donde cada desarrollador tenga acceso de escritura a su propio repositorio p˙blico y acceso de lectura a los repositorios de todos los dem·s. Habitualmente, este escenario suele incluir un repositorio canÛnico, representante "oficial" del proyecto.
+<title><h2>Flujo de trabajo centralizado</h2></title>
+Existe un √∫nico repositorio o punto central que guarda el c√≥digo y todo el mundo sincroniza su trabajo con √©l. Si dos desarrolladores clonan desde el punto central, y ambos hacen cambios; tan solo el primero de ellos en enviar sus cambios de vuelta lo podr√° hacer limpiamente. El segundo desarrollador deber√° fusionar previamente su trabajo con el del primero, antes de enviarlo, para evitar el sobreescribir los cambios del primero
 
-Flujo de trabajo con Dictador y Tenientes
-Es una variante del flujo de trabajo con m˙ltiples repositorios. Se utiliza generalmente en proyectos muy grandes, con cientos de colaboradores. Un ejemplo muy conocido es el del kernel de Linux. Unos gestores de integraciÛn se encargan de partes concretas del repositorio; y se denominan tenientes. Todos los tenientes rinden cuentas a un gestor de integraciÛn; conocido como el dictador benevolente. El repositorio del dictador benevolente es el repositorio de referencia, del que recuperan (pull) todos los colaboradores.
+<title><h2>Flujo de trabajo del Gestor-de-Integraciones</h2></title>
+Al permitir m√∫ltiples <p>repositorios remotos</p>, en Git es posible tener un flujo de trabajo donde cada desarrollador tenga acceso de escritura a su propio repositorio p√∫blico y acceso de lectura a los repositorios de todos los dem√°s. Habitualmente, este escenario suele incluir un repositorio can√≥nico, representante "oficial" del proyecto.
+
+<title><h2>Flujo de trabajo con Dictador y Tenientes</h2></title>
+<p><strong>Es una variante del flujo de trabajo con m√∫ltiples repositorios</p></strong>. Se utiliza generalmente en proyectos muy grandes, con cientos de colaboradores. Un ejemplo muy conocido es el del kernel de Linux. Unos gestores de integraci√≥n se encargan de partes concretas del repositorio; y se denominan tenientes. Todos los tenientes rinden cuentas a un gestor de integraci√≥n; conocido como el dictador benevolente. El repositorio del dictador benevolente es el repositorio de referencia, del que recuperan (pull) todos los colaboradores.
+
  
  </BODY>
 </HTML>
