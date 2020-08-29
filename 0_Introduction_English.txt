@@ -1,0 +1,23 @@
+<HTML>
+  <HEAD>0_Introduction
+  </HEAD>
+  <BODY>
+Introduction to git
+Git is a distributed version control system that differs from the rest in the way it models its data. Most other systems store the information as a list of file changes, while Git models their data more like a set of snapshots of a mini filesystem.
+The three states
+Git has three main states in which your files can be found: committed, modified, and staged. Confirmed means that the data is safely stored in your local database. Modified means that you have modified the file but have not yet committed it to your database. Ready means that you have marked a modified file in its current version to go on your next commit.
+
+This brings us to the three main sections of a Git project: the Git directory, the working directory, and the staging area.
+Distributed workflows with git
+We have seen what a distributed version control environment consists of, but beyond the simple definition, there is more than one way to manage repositories. These are the most common workflows in Git.
+
+Centralized workflow
+There is a single repository or central point that stores the code and everyone synchronizes their work with it. If two developers clone from the central point, and both make changes; only the first of them to send their changes back will be able to do so cleanly. The second developer must previously merge his work with that of the first, before sending it, to avoid overwriting the changes of the first
+
+Integration-Manager workflow
+By allowing multiple remote repositories, in Git it is possible to have a workflow where each developer has write access to their own public repository and read access to everyone else's repositories. Typically, this scenario usually includes a canonical repository, "official" representative of the project.
+
+Workflow with Dictator and Lieutenants
+It's a variant of the multi-repository workflow. It is generally used in very large projects, with hundreds of collaborators. A well-known example is the Linux kernel. Integration managers take care of specific parts of the repository; and they are called lieutenants. All lieutenants report to an integration manager; known as the benevolent dictator. The benevolent dictator's repository is the reference repository, from which all collaborators retrieve (pull).llos en enviar sus cambios de vuelta lo podrá hacer limpiamente. El segundo desarrollador deberá fusionar previamente su trabajo con el del primero, antes de enviarlo, para evitar el sobreescribir los cambios del primero
+  </BODY>
+</HTML>
